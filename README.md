@@ -1,6 +1,6 @@
 # Algorithm-and-Data-Structure
 
-*Data Structure
+<h1>Data Structure</h1>
 - List
 - Stack
 - Tree
