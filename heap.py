@@ -26,7 +26,7 @@ class heap:
   def heap_print(self):
     print(self.heap_list[1:])
 
-  def percDown(self,i):
+  def _godown(self,i):
     while (i * 2) <= self.current_size:
       mc = self.maxChild(i)
       if self.heap_list[i] < self.heap_list[mc]:
@@ -47,7 +47,7 @@ class heap:
     self.heap_list[1] = self.heap_list[self.current_size]
     self.current_size = self.current_size - 1
     self.heap_list.pop()
-    self.percDown(1)
+    self._godown(1)
     return retval
 
 
