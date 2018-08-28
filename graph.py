@@ -86,7 +86,7 @@ graph.insert_node('2')
 graph.insert_edge('2', '1', 100)
 graph.insert_edge('2', '3', 200)
 graph.insert_edge('1', '3', 300)
-# Should be [(100, 1, 2), (101, 1, 3), (102, 1, 4), (103, 3, 4)]
+
 print(graph.get_edge_list())
 
 graph.insert_edge('1', '7', 350)
